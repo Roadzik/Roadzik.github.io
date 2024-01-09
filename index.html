@@ -57,7 +57,7 @@
 
                         <script>
                             let allElements = document.querySelector('question')
-                            document.querySelector('#search').addEventListener('keydown', e=>{
+                            document.querySelector('#search').addEventListener('input', e=>{
                                 document.querySelectorAll('.question .title').forEach(f=>{
                                         f.parentElement.style.display = ''
 
