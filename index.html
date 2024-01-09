@@ -59,6 +59,7 @@
                         <script>
                             let allElements = document.querySelector('question')
                             document.querySelector('#search').addEventListener('input', e=>{
+								if(document.querySelector('#search').value=='') document.querySelector('#title-question').scrollIntoView()
                                 document.querySelectorAll('.question .title').forEach(f=>{
                                         f.parentElement.style.display = ''
                                 })
