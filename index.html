@@ -60,10 +60,10 @@
                             document.querySelector('#search').addEventListener('input', e=>{
                                 document.querySelectorAll('.question .title').forEach(f=>{
                                         f.parentElement.style.display = ''
-
                                 })
                                 document.querySelectorAll('.question .title').forEach(f=>{
                                     if(!f.innerHTML.toLowerCase().includes(document.querySelector('#search').value.toLowerCase())) {
+                                        console.log(f)
                                         f.parentElement.style.display = 'none'
                                     }
                                 })
